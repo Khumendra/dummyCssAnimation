@@ -1,0 +1,93 @@
+*{
+	background-color: wheat;
+	font-family: bookman old style;
+
+}
+h1 {
+	text-align: center;
+  	text-shadow: 2px 2px 8px #ff0000;
+  	color: white;
+}
+
+
+hr{
+	background-color: #0f9d58;
+	border-radius: 10px;
+	height: 10px;
+}
+#hr2{
+	background-color: green;
+	height: 30px;
+	margin: -30px auto;
+}
+
+
+.hrDown{
+	margin-bottom: 50px;
+
+	position: relative;
+
+
+}
+
+
+
+.batman{
+	margin-top: 100px;
+	width: 100%;
+	height: 100px;
+	
+	position: relative;
+}
+
+.batman img{
+	width: 140px;
+	height: 120px;
+	position: absolute;
+	top: -10px;
+	animation: batman_run;
+	animation-duration: 6s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes batman_run{
+	/*from{left: 0}
+	to{left: 90%}*/
+
+	0%{left: 0}
+	100%{left: 90%}
+}
+
+
+/*Transitions */
+
+.transition{
+	margin-top: 100px;
+	width: 100%;
+	height: 100px;
+	
+	
+}
+
+.transition img{
+	width: 30px;
+	height: 30px;
+
+	transition-property: width height;
+	transition-duration: 1.5s;
+	transition-timing-function: linear;
+
+	position: relative;
+	left: 49%;
+}
+
+.transition img:hover{
+	width: 60px;
+	height: 60px;
+
+	position: relative;
+	left: 48%;
+	/*transform: rotateX(180deg);*/
+}
